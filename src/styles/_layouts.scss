@@ -1,0 +1,47 @@
+// sections and layouts 
+
+
+.container {
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 2em 2em;
+    
+   
+}
+
+.main-content {
+  margin-top: 0;
+  background-color: var(--base-txt-color); /* Matches wave fill */
+
+}
+
+.podcast-section {
+//   text-align: center;
+  margin: 4rem auto;
+  padding: 2em 1rem;
+  text-align: center;
+  background-color: var(--body-bg);
+  position:relative;
+}
+
+
+.section{
+    margin:4rem 0;
+
+
+}
+// social
+
+
+// merch layouts sectins ==============================================
+
+.genre-grid {
+  
+  background-color: #f5f9f8; /* Light background for contrast */
+  border-radius: 10px;
+  padding: 2em;
+  margin-top:5em;
+  margin-bottom:4em;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+
+}

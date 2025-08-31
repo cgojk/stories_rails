@@ -1,0 +1,33 @@
+.quiz_wrapper{
+    background-color:var(--base-txt-color);
+    padding:1em;
+    margin-top:2em;
+}
+
+
+.section_quiz{
+    
+    padding: 2em;
+    background-color: var(--body-bg); /* Light background for contrast */
+    border-radius: 10px;
+    margin-bottom:2em;
+    margin-top:4em;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+.discover_stories_title{
+    font-size: 2.5rem;
+    color: var(--body-bg);
+    margin-bottom: 2em;
+    text-align:center;
+}
+.paragraph_quiz{
+    font-size: 1rem;
+    color: var(--base-txt-color);
+    margin-bottom: 2em;
+    text-align:center;
+    
+}
+.title_section_quiz{
+    color:var(--base-txt-color);
+    font-size: 2rem;
+}

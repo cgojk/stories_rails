@@ -1,0 +1,644 @@
+
+.card-image {
+  width: 100%;
+  height: 200px;          /* fixed height for uniformity */
+  object-fit: cover;      /* crops image to fill space nicely */
+  border-radius: 0px 0px 5px 5px;
+  display: block;
+}
+.cardPodcasts{
+    background-color: white;
+    width: 0  auto;
+
+    
+    border: 1px solid lightgray;
+    border-radius: 10px;
+   
+}
+
+
+ .imagePodcasts{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+   
+    
+    object-fit: cover;
+    
+}
+.cardPodcasts{
+    margin-block: 13px;
+    color: #333333;
+}
+
+.cardPodcasts .infoPodcasts {
+    padding: 10px;
+}
+
+.cardPodcasts .favorite {
+    width: 25px;
+    cursor: pointer;
+}
+
+.cardPodcasts .contact {
+    font-size: 0.75rem;
+    color: gray;
+    margin-block: 7px;
+}
+
+.cardPodcasts .favorite-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    width:30px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.cardPodcasts .favorite-button:active {
+    transform: none;
+    box-shadow: none;
+}
+//================================ component cards entry styles=========================================
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top:3em;
+}
+
+.contact-card {
+    flex-basis: 280px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+    padding-bottom: 20px;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-card:hover {
+    transform: translateY(-5px); /* move slightly up */
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3); /* deeper shadow on hover */
+}
+.contact-card {
+    will-change: transform;
+}
+
+.contact-card > img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.contact-card > a {
+  display: block; /* so it wraps image cleanly */
+  line-height: 0;  /* removes any inline spacing below img */
+  text-decoration: none; /* no underline */
+}
+.contact-card > h3 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.info-group  {
+    display: grid;
+    align-items: center;
+}
+
+
+.info-group > img {
+    height: 11px;
+    margin-right: 8px;
+}
+
+.info-group > p {
+    margin-block: 3px;
+    font-size: 12px;
+    color: #2B283A;
+    text-align: left;
+   
+
+}
+h3.title_podcast_story {
+    font-size:1rem;
+    margin-top: 0.5em;
+
+    margin-bottom: 0.5em;
+
+}
+
+
+
+
+.title_genre{
+    display:flex;
+    justify-content: space-between;
+     align-items: center; /* makes vertical alignment nicer */
+  margin-top: 0.5em;
+
+
+}
+
+// ==============genre styles =====================
+.genre-tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2em 0.6em;
+  font-style: normal;
+  font-size:0.8rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #FFEAD0;
+  color: #4D4D4D;
+  transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 0.3em;
+}
+
+.genre-tag:hover {
+    color: #FFEAD0;
+}
+
+.genre-tag:focus {
+    outline: none;
+}
+
+.genre-tag.selected {
+    color: #FFEAD0;
+}
+
+.genre-tag.Love:hover, .genre-tag.love.selected {
+    background-color: #E17654;
+}
+
+.genre-tag.Fantasy:hover, .genre-tag.history.selected {
+    background-color: #115E59;
+}
+
+.genre-tag.Fiction:hover, .genre-tag.fiction.selected {
+    background-color: #161616;
+}
+.genre-tag.History:hover, .genre-tag.action.selected {
+    background-color: #115E59;
+}
+.genre-tag.Action:hover, .genre-tag.mystery.selected {
+    background-color: #e17654;
+}
+.genre-tag.Other:hover, .genre-tag.crime.selected {
+    background-color: #e399ea;
+}
+.genre-tag.Other:hover, .genre-tag.storytelling.selected {
+    background-color: var(--base-txt-color);
+}
+.genre-tag.Other:hover, .genre-tag.other.selected {
+    background-color: #b199ea;
+}
+
+.genre-tag.clear-filters {
+    margin-left: -20px;
+    height: 34px;
+    padding: 6px 26px;
+    font-style: normal;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    text-decoration: underline;
+    background-color: transparent;
+    color: #4D4D4D;
+}
+.duration_podcast{
+    font-weight: 700;
+
+}
+
+
+
+// ================podcasts details styles =======================================
+.podcast-detail {
+    display: flex;
+    //   align-items: center;
+    padding: 20px;
+    align-items: flex-start;
+    gap: 20px;
+    border:2px solid var(--brand-color);
+    background-color: var(--base-bg-color);
+    margin-top:3em;
+    margin-bottom:3em;
+}  
+
+.podcast-image {
+   
+    width: 100%;
+    // max-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.podcast-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.podcast-content {
+    flex: 2;
+    max-width: 600px;
+}
+
+.podcast-detail h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.podcast-detail .genre,
+.podcast-detail .duration,
+.podcast-detail .description {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    text-align: left;
+}
+// icons stylng ============================
+
+.podcast-icons {
+  display: flex;
+  gap: 3em;
+//   justify-content:space-between;
+flex-wrap: wrap;
+align-items: center;;
+margin-top: 1.5em;
+margin-left:3em;
+}
+
+.podcast-icons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #444;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.podcast-icons button:hover {
+  color:var(--brand-color);
+  transform: scale(1.2);
+}
+
+
+.flex-btnicon{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color:var(--brand-color);
+    color: white;
+    cursor: pointer;
+    padding: 0.1em  1.5em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    flex-basis: auto;
+    font-weight: 500;
+}
+.flex-btnicon:hover {
+    background-color:white;
+    color:var(--base-txt-color);
+    border: 0.1em solid var(--brand-color);
+    
+   
+   
+
+}
+// 
+
+// This targets all icons within the podcast icons container
+
+
+// This targets all icons within the podcast icons container
+
+
+// podcast 
+.big-icon {
+  position: absolute;
+  bottom: 0;        /* corner placement */
+  right: 0;
+  width: 100px;     /* adjust size to taste */
+  opacity: 0.15;    /* subtle, doesn’t distract */
+  z-index: 0;       /* behind cards */
+  pointer-events: none; /* so it doesn’t block clicks */
+}
+
+// styles add your own story buttons
+.btn_add_story{
+
+              padding: 10px 20px;
+              font-size: 1rem;
+              background-color: var(--brand-color);
+              color: var(--body-bg);
+              border: none;
+              border-radius: 6px;
+              cursor: pointer;
+
+}
+.btn_add_story:hover{
+    background-color: white;
+    color: var(--base-txt-color);
+    border: 0.1em solid var(--brand-color);
+    transition: 200ms all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.add_story{
+    text-align: center;
+    margin: 2em 0;
+}
+
+// podcast styles podcastdetial page
+
+.podcast-detail-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--body-bg);
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.back-link {
+  margin-bottom: 1rem;
+}
+
+.back-link a {
+  text-decoration: none;
+  color: var(--base-txt-color);
+  font-weight: bold;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+.podcast-card {
+  text-align: center;
+}
+
+.podcast-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.podcast-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.podcast-meta {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top:2em;
+}
+
+.audio-player {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.loading, .error {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 2rem;
+  color: #555;
+}
+
+// filtering by categories
+
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: center;
+  margin: 1.5em 0;
+}
+
+.category-btn {
+  padding: 0.4em 1em;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: #f8f8f8;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.category-btn:hover {
+  background: #eee;
+}
+
+.category-btn.active {
+  background: #e17654;
+  color: white;
+  border-color: #e17654;
+}
+
+
+
+.search-input-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+}
+
+.search-input-wrapper input {
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.search-button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.search-suggestions {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 100;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.search-suggestions li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.search-suggestions li:hover {
+  background-color: #f0f0f0;
+}
+.titleaddstory {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin: 1.5em 0;
+  gap:4em;
+}
+
+.titleaddstory h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.titleaddstory .btn_add_story {
+  padding: 1em;
+  border: none;
+//   border-radius: 20px;
+  background: var(--brand-color);
+  color: var(--body-bg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.titleaddstory .btn_add_story:hover {
+  background: var(--body-bg);
+  color:var(--base-txt-color);
+  border:var(--brand-color) 0.1em solid;
+}
+
+.title_section-sm__podcasts{
+    font-size: 1.2rem;
+    color: var(--base-txt-color);
+    
+    text-align:center;
+}
+.info-group a{
+    text-decoration:none;
+}
+// .learn-more-btn{
+//     background-color:var(--brand-color);
+//     color: white;
+//     display: inline-flex;
+//     align-items: center;
+//     border-radius: 5px;
+//     padding: 0.1em  1.5em;
+//     font-size: 1rem;
+//     cursor: pointer;
+//     margin-top: auto;
+//     flex-basis: auto;
+//     font-weight: 500;
+//     padding:.5em;
+// }
+.learn-more-btn:hover {
+    background-color:white;
+    color: var(--base-txt-color);
+    border:0.1em solid var(--brand-color);
+   
+}
+.wrapper_podcastinfo_story {
+    display:flex;
+    flex-direction:column;
+    flex-grow:1;
+}
+
+// podcast details ocntorls styles
+
+.like-button {
+  background: var(--brand-color);
+  border: 2px solid var(--brand-color);
+  color: var(--body-bg);
+  padding: 0.8em 1.2em;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.like-button:hover:not(:disabled) {
+  background: var(--brand-color);
+  color: var(--body-bg);
+}
+
+.like-button.liked {
+  background: var(--brand-color);
+  color: var(--body-bg);
+  border-color: var(--brand-color);
+  cursor: default;
+}
+
+
+.meta-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+  color: var(--base-txt-color);
+}
+.wrapper_podcastinfo_story {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;        /* fill vertical space inside the card */
+}
+
+.podcast-meta p {
+  display: flex;
+  align-items: center;
+  margin: 0.4em 0;
+  font-size: 1rem;
+  color: var(--base-txt-color);
+}
+
+.info-group_btn {
+  margin-top: auto;    /* pushes button to bottom */
+  display: flex;       /* so button can stretch */
+}
+
+// .learn-more-btn {
+//   display: flex;
+//   align-items: center;
+//   gap: 8px;
+//   margin-top: 1em;
+// }
+
+.learn-more-btn {
+  background-color: var(--brand-color);
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  cursor: pointer;
+  flex: 1;             /* makes button take full width */
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+}

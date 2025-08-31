@@ -1,0 +1,248 @@
+@media(max-width:1200px){
+    .hero .hero-flex{
+        gap:2rem;
+
+    }
+
+    .hero img {
+        max-width:500px;
+        margin-right:0;
+    }
+
+  }
+
+  @media(max-width:992px){
+ .hero {
+    text-align:center;
+
+ }
+ .hero .hero-flex{
+    flex-direction:column;
+    padding-bottom:4rem;
+
+ }
+ /* Testimonials */
+  .testimonials__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials__card {
+    padding: 0 1.5rem;
+  }
+
+  .testimonials__card:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width:768px){
+
+
+
+
+    .hero-image-wrapper {
+    min-width: 300px;
+    width: 90%;
+  }
+
+    .menu-btn{
+        display:block;
+    }
+    .nav-list{
+        display:none;
+        flex-direction:column;
+        align-content: center;
+        text-align: center;
+        background-color: #f5f9f8;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 2em;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        opacity:0.95;
+
+    }
+    .nav-list.open {
+    display: flex; // show nav list when menu is toggled open
+  }
+
+  .nav-list-item {
+    margin: 10px 0;
+  }
+  //  .merch-detail {
+  //   display:grid;
+  //   grid-template-columns: 1fr;
+    
+  //   gap: 2em;
+   
+  // }
+  // podcasts details styles
+  .podcast-detail
+   {
+    display:flex;
+    flex-direction: column;
+  }
+  .podcast-image,
+  .podcast-content
+  {
+    width:100%;
+  }
+   /* Testimonials */
+  .testimonials__container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials__card:nth-child(2) {
+    display: none;
+  }
+ 
+ 
+
+  // merch styles 
+
+}
+
+@media (max-width: 576px) {
+
+  .fullscreen-video-container video {
+    display: none;
+  }
+
+  /* Optional: hide the toggle button too */
+  .video-toggle-btn {
+    display: none;
+  }
+
+  .fullscreen-video-container {
+    background-color: var(--brand-color); /* show brand color instead */
+    width: 100%;
+    height: 100vh; /* or any desired height */
+    display: flex;
+    justify-content: center; /* optional: center content inside */
+    align-items: center;     /* optional: center content inside */
+  }
+
+    /* Make hero container relative and auto height */
+
+    
+ 
+
+  .hero_title_video {
+    padding: 2em 1em 1em 1em;  /* reduce padding for small screens */
+    font-size: 1.5rem;         /* smaller text */
+  }
+
+  .hero-image-wrapper {
+    display: none;             /* hide image if necessary */
+  }
+
+
+
+ 
+
+  .mission-section {
+    padding: 2rem 1rem; /* reduce top/bottom and horizontal padding */
+    margin-top: 1rem;
+  }
+
+  .mission-title,
+  .discover_stories_title
+   {
+    font-size: 1.5rem;              /* smaller title */
+    margin-bottom: 1rem;
+  }
+
+  // /* Red line under the title */
+  // .mission-title::after,
+  // .discover_stories_title::after {
+  //   content: '';
+  //   position: absolute;
+  //   left: 25%;                       /* start at 25% to center 50% width */
+  //   bottom: -0.5rem;
+  //   width: 50%;                       /* line width */
+  //   height: 4px;                      /* thickness of line */
+  //   background-color: var(--brand-color);
+  // }
+  .paragraph_quiz {
+    font-size: 0.9rem;               /* smaller paragraph text */
+  }
+
+  .mission-title_container {
+    font-size: 1.2rem;               /* smaller heading inside container */
+  }
+
+  .mission-description {
+    font-size: 0.9rem;               /* smaller paragraph text */
+  }
+
+  .mission_container {
+    padding: 1rem;                   /* shrink container padding */
+  }
+  .about-page-container .mission-section {
+    padding: 0.5em;
+  }
+  
+}
+
+
+
+
+@media (max-width: 402px) {
+  
+
+  
+  
+  .mission-section {
+    padding: 1em; /* reduce top/bottom and horizontal padding */
+    margin-top: 1rem;
+  }
+
+  .mission-title
+  
+   {
+    font-size: 1.7rem;              /* smaller title */
+    margin-bottom: 1rem;
+  }
+  .quiz_wrapper .discover_stories_title{
+    font-size:1.7rem;
+    margin-bottom:1rem;
+  }
+  // /* Red line under the title */
+  // .mission-title::after,
+  // .discover_stories_title::after {
+  //   content: '';
+  //   position: absolute;
+  //   left: 25%;                       /* start at 25% to center 50% width */
+  //   bottom: -0.5rem;
+  //   width: 50%;                       /* line width */
+  //   height: 4px;                      /* thickness of line */
+  //   background-color: var(--brand-color);
+  // }
+  .paragraph_quiz {
+    font-size: 0.8rem;               /* smaller paragraph text */
+  }
+
+  .mission-title_container {
+    font-size: 1rem;               /* smaller heading inside container */
+  }
+
+  .mission-description {
+    font-size: 0.8rem;               /* smaller paragraph text */
+  }
+
+  .mission_container {
+    padding: 0.5em;                   /* shrink container padding */
+  }
+  .about-page-container .mission-section {
+    padding: 0.2em;
+  }
+  .mission-section .mission_container{
+    padding:0.2em;
+  }
+  .mission-section .title_homestart {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+}
