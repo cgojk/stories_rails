@@ -7,7 +7,7 @@ import { useParams, Link, useLocation } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
 import { Tag, Clock, BookOpen } from "lucide-react";
 
-const API = import.meta.env.VITE_API_BASE || "http://localhost:3000/api";
+const API = import.meta.env.VITE_API_BASE 
 
 export default function PodcastDetail() {
   const { id } = useParams();
