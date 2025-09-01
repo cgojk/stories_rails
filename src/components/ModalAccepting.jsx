@@ -1,18 +1,4 @@
 
-// export default function ModalAccepting({ message, onConfirm, onCancel, confirmText = "Yes", cancelText = "No" }) {
-//   return (
-//     <div className="modal-backdrop">
-//       <div className="modal-content">
-//         <p>{message}</p>
-//         <div className="modal_confirmation">
-//           {onConfirm && <button className="modal-btn confirm" onClick={onConfirm}>{confirmText}</button>}
-//           {onCancel && <button className="modal-btn cancel" onClick={onCancel}>{cancelText}</button>}
-//         </div>
-//       </div>
-     
-//     </div>
-//   );
-// }
 
 import React from "react";
 

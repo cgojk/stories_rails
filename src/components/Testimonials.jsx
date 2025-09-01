@@ -56,13 +56,12 @@ export default function Gallery() {
       </div>
 
      {selected && (
-  <div className="popup-overlay" onClick={() => setSelected(null)}>
+  <div className="popup-overlay" role="dialog" onClick={() => setSelected(null)}>
     <div className="popup-content" onClick={(e) => e.stopPropagation()}>
       <button className="close-button__gallery" onClick={() => setSelected(null)} aria-label="Close">
         <FaTimes />
       </button>
-
-      <img src={encodeURI(selected.src)} alt={selected.alt} />
+      <img src={encodeURI(selected.src)} alt={selected.alt || 'Gallery image'} />
       <h3>{selected.title}</h3>
       <p>{selected.description}</p>
     </div>
