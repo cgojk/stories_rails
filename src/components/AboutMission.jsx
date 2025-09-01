@@ -5,7 +5,7 @@ export default function AboutMission() {
     return (
         <Mission
   sectionTitle="Our Mission"
-  imageSrc="/images/historical/fallback.png"
+  imageSrc="/images/historical/Roma.jpeg"
   imageAlt="Mission Image"
   heading="Preserving Memories, Connecting people"
   text="Our mission is to celebrate and preserve the heritage of Brisbane's Roma Street Station while connecting the community through shared stories. 

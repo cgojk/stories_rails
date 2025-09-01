@@ -5,7 +5,7 @@ export default function AboutStory() {
     return (
       <Mission
   sectionTitle="Our Story"
-  imageSrc="/public/images/historical/default.jpg"
+  imageSrc="/public/images/historical/Roma_01.jpg"
   imageAlt="Roma Street Station heritage"
   heading="Our Story"
   text="Roma Street Station is more than just a place of travel  it is a living landmark in Brisbane’s history. 
