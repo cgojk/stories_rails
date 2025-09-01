@@ -12,8 +12,7 @@ export default function Podcasts() {
   const [searchTerm, setSearchTerm] = useState("");
   const [suggestions, setSuggestions] = useState([]);
 
-  const API = import.meta.env.VITE_API_BASE || "http://localhost:3000/api";
-
+  const API = import.meta.env.VITE_API_BASE 
   // Fetch podcasts
   useEffect(() => {
     fetch(`${API}/podcasts`)
